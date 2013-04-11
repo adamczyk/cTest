@@ -80,7 +80,7 @@ namespace Task1
 
             // TODO: Add your update logic here
 
-
+            //Her kommer den nye koden!!
 
             base.Update(gameTime);
         }
