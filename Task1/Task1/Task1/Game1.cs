@@ -80,42 +80,6 @@ namespace Task1
 
             // TODO: Add your update logic here
 
-            if (currentSquare.Location.X == GraphicsDevice.Viewport.Width-currentSquare.Width)
-            {
-                flyingRight = false;
-            }
-            else if (currentSquare.Location.X == 0)
-            {
-                flyingRight = true;
-            }
-
-            if (currentSquare.Location.Y == GraphicsDevice.Viewport.Height - currentSquare.Height)
-            {
-                flyingUp = true;
-            }
-            else if (currentSquare.Location.Y == 0)
-            {
-                flyingUp = false;
-            }
-            
-
-            if (flyingRight == true)
-            {
-                currentSquare.Offset(5, 0);
-            }
-            else
-            {
-                currentSquare.Offset(-5, 0);
-            }
-
-            if (flyingUp == true)
-            {
-                currentSquare.Offset(0, -1);
-            }
-            else
-            {
-                currentSquare.Offset(0, 1);
-            }
 
 
             base.Update(gameTime);
